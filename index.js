@@ -1,7 +1,7 @@
 import express from "express"
 import cors from "cors"
 import bodyParser from "body-parser"
-import productsRouter from "./routes/products.routes.js"
+import productsRouter from "./src/routes/products.routes.js"
 
 const app = express()
 

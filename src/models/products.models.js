@@ -1,5 +1,5 @@
 
-import {db} from "../src/data.js"
+import {db} from "../data.js"
 
 import {
     collection,

@@ -8,7 +8,9 @@ export const getAllProducts = async () => {
 
 export const getProductById = async (id) => {
     const producto = await Product.getProductById(id)
-    if(!id){}
+    if(!id){
+        throw new Error("Faltan campos obligatorios")
+    }
     return producto
 }
 
@@ -23,5 +25,8 @@ export const createProduct = async (data) => {
 
 export const deleteProduct = async (id) => {
     const productoEliminado = await Product.deleteProduct(id)
+    if(!id){
+        throw new Error("Faltan campos obligatorios")
+    }
     return productoEliminado
 }
