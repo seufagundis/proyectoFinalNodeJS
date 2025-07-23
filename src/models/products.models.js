@@ -5,7 +5,6 @@ import { collection, getDocs, getDoc, addDoc, deleteDoc, doc } from "firebase/fi
 
 export const productsCollectionRef = collection(db, "products")
 
-
 export const getAllProducts = async () => {
     try {
         const querySnapshot = await getDocs(productsCollectionRef)
