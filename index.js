@@ -11,6 +11,10 @@ app.use(cors())
 
 app.use(bodyParser.json())
 
+app.get("/",(req,res)=>{
+    res.send("Bienvenidos a la API Rest de Facundo Sanchez - Comisión 25023")
+})
+
 app.use("/api",productsRouter)
 
 app.use("/api/auth", authRouter)
